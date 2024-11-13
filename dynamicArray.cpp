@@ -44,8 +44,36 @@
 
 
 #include <iostream>
-
 using namespace std;
+
+//// Función para ordenar el arreglo sin modificar el arreglo original, creando uno nuevo
+//void sortArray(int*& arr, int size) {
+//    // Crear un nuevo arreglo de la misma longitud
+//    int* sortedArr = new int[size];
+//
+//    // Copiar los elementos del arreglo original al nuevo arreglo
+//    for (int i = 0; i < size; ++i) {
+//        sortedArr[i] = arr[i];
+//    }
+//
+//    // Ordenar el nuevo arreglo utilizando el algoritmo de burbuja
+//    for (int i = 0; i < size - 1; ++i) {
+//        for (int j = 0; j < size - 1 - i; ++j) {
+//            if (sortedArr[j] > sortedArr[j + 1]) {
+//                // Intercambiar los elementos
+//                int temp = sortedArr[j];
+//                sortedArr[j] = sortedArr[j + 1];
+//                sortedArr[j + 1] = temp;
+//            }
+//        }
+//    }
+//
+//    // Liberar la memoria del arreglo original
+//    delete[] arr;
+//
+//    // Reemplazar el arreglo original con el arreglo ordenado
+//    arr = sortedArr;
+//}
 
 // Función para ordenar el arreglo con el algoritmo de burbuja (Bubble Sort)
 void bubbleSort(int* arr, int size) {
