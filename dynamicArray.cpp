@@ -109,7 +109,7 @@ int main() {
 
         // Si el tamaño actual alcanza la capacidad, redimensionamos el arreglo
         if (size == capacity) {
-            capacity = (capacity == 0) ? 1 : capacity * 2;  // Duplica la capacidad
+            capacity = capacity * 2;  // Duplica la capacidad
             int* newArr = new int[capacity];  // Nuevo arreglo con mayor capacidad
 
             // Copiar los elementos del arreglo viejo al nuevo
